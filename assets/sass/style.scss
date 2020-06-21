@@ -1,0 +1,48 @@
+/*-------------------------------------------------
+=  Table of Css
+
+1.Reset
+2.Print
+3.Fonts
+3.Core
+4.Bootstrap 4 Extension
+5.Navigation
+6.Elements
+7.Owl
+8.Swiper
+9.Magnific Popup
+10.Aos
+11.Carousel
+12.Masonry
+13.Buttons
+14.Form
+15.Page Header
+16.Footer
+17.Template
+
+-------------------------------------------------*/
+
+@import "../css/bootstrap/bootstrap-grid.min.css";
+@import "../css/bootstrap/bootstrap-reboot.min.css";
+@import 'vars';
+@import 'mixins';
+@import 'reset';
+@import 'print';
+@import 'fonts';
+@import 'core';
+@import 'bootstrap';
+@import 'navigation';
+@import 'elements';
+@import 'owl';
+@import 'swiper';
+@import 'magnificpopup';
+@import 'aos';
+@import 'carousel';
+@import 'masonry';
+@import 'buttons';
+@import 'form';
+@import 'pageheader';
+@import 'footer';
+@import 'template';
+
+/*-------------------------------------------------*/

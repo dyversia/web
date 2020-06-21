@@ -1,0 +1,71 @@
+// =  Vars
+
+/*-------------------------------------------------*/
+
+// = Import Google Fonts
+
+/*-------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&display=swap');
+
+/*-------------------------------------------------*/
+
+$primary-font: 'Cabin',
+sans-serif;
+$secondary-font: 'Cabin',
+sans-serif;
+$paragraph-font: 'Cabin',
+sans-serif;
+$primary-color: #222220;
+$primary-color-light: #222220;
+$paragraph-color: #222222;
+$paragraph-color-light: #777777;
+$secondary-color: #3C4AED;
+$secondary-color-2: #6AFDEF;
+$grey-bg: #F8F8F8;
+$template-bg: #F4F0EB;
+$dark-bg: #222220;
+
+/*-------------------------------------------------*/
+
+// = Element Color
+
+/*--------- template colors -------------------*/
+
+$dropdown-menu-item-bg: #F8F8F8;
+$border-element-color: #CDCDCD;
+$ctabox-element-bg: #222220;
+$icon-element-icon: #222220;
+$navigation-element-bg: rgba($color: #CDCDCD,
+$alpha: 0.4);
+$code-element-bg: #F8F8F8;
+
+/*---------- default colors ------------------*/
+
+$icon-element-bg: #F8F8F8;
+$accordion-element-icon: #F8F8F8;
+$accordion-element-bg: #F8F8F8;
+$blockquote-element-bg: #F8F8F8;
+$input-form-bg: #F8F8F8;
+$dropdown-menu-bg: #F8F8F8;
+$button-menu-bg: #F8F8F8;
+$mobile-menu-bg: #F8F8F8;
+$top-menu-bg: #F8F8F8;
+$menu-bg: #F8F8F8;
+$position-element-bg: #F8F8F8;
+$page-header-bg: #F8F8F8;
+$overlay-dark-bg: #192D35;
+$arrow-headerslider-bg: #F8F8F8;
+
+/*-------------------------------------------------*/
+
+// = Responsive
+
+/*-------------------------------------------------*/
+
+$mobile: 414px;
+$xsmall: 480px;
+$small: 576px;
+$medium: 767px;
+$large: 991px;
+$full: 1199px;

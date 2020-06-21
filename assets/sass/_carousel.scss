@@ -1,0 +1,165 @@
+/*-------------------------------------------------*/
+
+// = Casousel
+
+/*-------------------------------------------------*/
+
+// Custom CSS
+[class*="owl-carousel"] {
+    .owl-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        .owl-prev,
+        .owl-next {
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+                width: 50px;
+                background-color: $primary-color;
+                color: white;
+                border-radius: 0 4px 4px 0;
+                transition: all .4s ease;
+                &:hover {
+                    background-color: $paragraph-color-light;
+                    transition: all .4s ease;
+                }
+                i {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .owl-prev {
+            width: 50%;
+            float: left;
+        }
+        .owl-next {
+            width: 50%;
+            float: left;
+            text-align: right;
+            span {
+                float: right;
+                border-radius: 4px 0 0 4px;
+            }
+        }
+    }
+    .owl-dots {
+        margin-top: 0.5rem;
+    }
+}
+
+// Custom CSS
+[class*="swiper-container"] {
+    width: 100%;
+    width: 100vw;
+    height: 626px;
+    [class*="swiper-slide"] {
+        padding: 200px 0 80px 0;
+        &[data-overlay] {
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                z-index: -1;
+                background-color: rgba($color: $overlay-dark-bg, $alpha: 0.5);
+            }
+        }
+        a {
+            &[class*="btn"] {
+                &[class*="big"] {
+                    &[class*="border"] {
+                        height: 46px;
+                        line-height: 46px;
+                        @include media(large) {
+                            height: 41px;
+                            line-height: 41px;
+                        }
+                    }
+                }
+                &[class*="medium"] {
+                    &[class*="border"] {
+                        height: 36px;
+                        line-height: 35px;
+                    }
+                }
+            }
+        }
+        .container {
+            @include media(small) {
+                width: auto;
+            }
+        }
+    }
+    [class*="swiper-button"] {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        text-align: center;
+        line-height: 50px;
+        font-size: 2rem;
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: .4s ease;
+        &[class*="prev"] {
+            left: 0px;
+        }
+        &[class*="next"] {
+            right: 15px;
+        }
+        &[class*="round"] {
+            border-radius: 50%;
+        }
+        &[class*="bg"],
+        &[class*="border"] {
+            background-color: $arrow-headerslider-bg;
+            &[class*="prev"] {
+                left: 0px;
+            }
+            &[class*="next"] {
+                right: 15px;
+            }
+            &[class*="round"] {
+                &[class*="prev"] {
+                    left: 15px;
+                }
+                &[class*="next"] {
+                    right: 30px;
+                }
+            }
+        }
+        &[class*="border"] {
+            background-color: transparent;
+            border: 1px solid rgba($color: $primary-color, $alpha: 0.8);
+        }
+        &[class*="light"] {
+            color: white;
+            &[class*="bg"] {
+                background-color: white;
+                color: $primary-color;
+            }
+            &[class*="border"] {
+                border-color: rgba($color: white, $alpha: 0.8);
+            }
+        }
+    }
+    &:hover {
+        [class*="swiper-button"] {
+            opacity: 1;
+            transition: .4s ease;
+        }
+    }
+}
